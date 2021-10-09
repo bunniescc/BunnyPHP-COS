@@ -15,7 +15,7 @@
     }
   },
   "require": {
-    "ivanlulyf/bunnyphp": "^2.3",
+    "ivanlulyf/bunnyphp": "^3",
     "qcloud/cos-sdk-v5": "2.*"
   }
 }

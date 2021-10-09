@@ -4,6 +4,7 @@ namespace Bunny\Storage;
 
 use BunnyPHP\Storage;
 use BunnyPHP\View;
+use Exception;
 use Qcloud\Cos\Client;
 
 class CosStorage implements Storage
@@ -62,13 +63,13 @@ class CosStorage implements Storage
             } else {
                 return false;
             }
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             View::error(['tp_error_msg' => $e->getMessage()]);
             return false;
         }
     }
 
-    public function upload($filename, $path)
+    public function upload(string $filename, string $path): string
     {
         try {
             $res = $this->cosClient->putObject([
@@ -81,13 +82,13 @@ class CosStorage implements Storage
             } else {
                 return false;
             }
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             View::error(['tp_error_msg' => $e->getMessage()]);
             return false;
         }
     }
 
-    public function remove($filename)
+    public function remove($filename): bool
     {
         if (strpos($filename, $this->url) === 0) {
             $filename = substr($filename, strlen($this->url));
@@ -98,7 +99,7 @@ class CosStorage implements Storage
                 'Key' => $filename,
             ));
             return !!$res;
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             View::error(['tp_error_msg' => $e->getMessage()]);
             return false;
         }
