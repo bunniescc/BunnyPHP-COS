@@ -8,22 +8,22 @@
     "packages": [
         {
             "name": "guzzlehttp/command",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/command.git",
-                "reference": "04b06e7f5ef37d814aeb3f4b6015b65a9d4412c5"
+                "reference": "7883359e0ecab8a8f7c43aad2fc36360a35d21e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/command/zipball/04b06e7f5ef37d814aeb3f4b6015b65a9d4412c5",
-                "reference": "04b06e7f5ef37d814aeb3f4b6015b65a9d4412c5",
+                "url": "https://api.github.com/repos/guzzle/command/zipball/7883359e0ecab8a8f7c43aad2fc36360a35d21e8",
+                "reference": "7883359e0ecab8a8f7c43aad2fc36360a35d21e8",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "^7.3",
-                "guzzlehttp/promises": "^1.3",
-                "guzzlehttp/psr7": "^1.7 || ^2.0",
+                "guzzlehttp/guzzle": "^7.4.1",
+                "guzzlehttp/promises": "^1.5.1",
+                "guzzlehttp/psr7": "^1.8.3 || ^2.1",
                 "php": "^7.2.5 || ^8.0"
             },
             "require-dev": {
@@ -69,7 +69,7 @@
             "description": "Provides the foundation for building command-based web service clients",
             "support": {
                 "issues": "https://github.com/guzzle/command/issues",
-                "source": "https://github.com/guzzle/command/tree/1.2.1"
+                "source": "https://github.com/guzzle/command/tree/1.2.2"
             },
             "funding": [
                 {
@@ -85,28 +85,29 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-05T19:12:19+00:00"
+            "time": "2022-02-08T10:21:14+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.3.0",
+            "version": "7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "7008573787b430c1c1f650e3722d9bba59967628"
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7008573787b430c1c1f650e3722d9bba59967628",
-                "reference": "7008573787b430c1c1f650e3722d9bba59967628",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.4",
-                "guzzlehttp/psr7": "^1.7 || ^2.0",
+                "guzzlehttp/promises": "^1.5",
+                "guzzlehttp/psr7": "^1.8.3 || ^2.1",
                 "php": "^7.2.5 || ^8.0",
-                "psr/http-client": "^1.0"
+                "psr/http-client": "^1.0",
+                "symfony/deprecation-contracts": "^2.2 || ^3.0"
             },
             "provide": {
                 "psr/http-client-implementation": "1.0"
@@ -116,7 +117,7 @@
                 "ext-curl": "*",
                 "php-http/client-integration-tests": "^3.0",
                 "phpunit/phpunit": "^8.5.5 || ^9.3.5",
-                "psr/log": "^1.1"
+                "psr/log": "^1.1 || ^2.0 || ^3.0"
             },
             "suggest": {
                 "ext-curl": "Required for CURL handler support",
@@ -126,16 +127,16 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3-dev"
+                    "dev-master": "7.4-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -143,18 +144,42 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
                 },
                 {
+                    "name": "Jeremy Lindblom",
+                    "email": "jeremeamia@gmail.com",
+                    "homepage": "https://github.com/jeremeamia"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
                     "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com",
-                    "homepage": "https://sagikazarmark.hu"
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library",
-            "homepage": "http://guzzlephp.org/",
             "keywords": [
                 "client",
                 "curl",
@@ -168,7 +193,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.3.0"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
             },
             "funding": [
                 {
@@ -180,35 +205,31 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://github.com/alexeyshockov",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/gmponos",
-                    "type": "github"
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2021-03-23T11:33:13+00:00"
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/guzzle-services",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle-services.git",
-                "reference": "3731f120ce6856f4c71fff7cb2a27e263fe69f84"
+                "reference": "4989d902dd4e0411b320e851c46f3c94d652d891"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle-services/zipball/3731f120ce6856f4c71fff7cb2a27e263fe69f84",
-                "reference": "3731f120ce6856f4c71fff7cb2a27e263fe69f84",
+                "url": "https://api.github.com/repos/guzzle/guzzle-services/zipball/4989d902dd4e0411b320e851c46f3c94d652d891",
+                "reference": "4989d902dd4e0411b320e851c46f3c94d652d891",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/command": "^1.2",
-                "guzzlehttp/guzzle": "^7.3",
-                "guzzlehttp/psr7": "^1.7 || ^2.0",
-                "guzzlehttp/uri-template": "^0.2 || ^1.0",
+                "guzzlehttp/command": "^1.2.2",
+                "guzzlehttp/guzzle": "^7.4.1",
+                "guzzlehttp/psr7": "^1.8.3 || ^2.1",
+                "guzzlehttp/uri-template": "^1.0.1",
                 "php": "^7.2.5 || ^8.0"
             },
             "require-dev": {
@@ -257,7 +278,7 @@
             "description": "Provides an implementation of the Guzzle Command library that uses Guzzle service descriptions to describe web services, serialize requests, and parse responses into easy to use model structures.",
             "support": {
                 "issues": "https://github.com/guzzle/guzzle-services/issues",
-                "source": "https://github.com/guzzle/guzzle-services/tree/1.3.1"
+                "source": "https://github.com/guzzle/guzzle-services/tree/1.3.2"
             },
             "funding": [
                 {
@@ -273,20 +294,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-07T13:01:35+00:00"
+            "time": "2022-03-03T11:21:34+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "136a635e2b4a49b9d79e9c8fee267ffb257fdba0"
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/136a635e2b4a49b9d79e9c8fee267ffb257fdba0",
-                "reference": "136a635e2b4a49b9d79e9c8fee267ffb257fdba0",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
                 "shasum": ""
             },
             "require": {
@@ -302,12 +323,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -341,7 +362,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/1.5.0"
+                "source": "https://github.com/guzzle/promises/tree/1.5.1"
             },
             "funding": [
                 {
@@ -357,20 +378,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-07T13:05:22+00:00"
+            "time": "2021-10-22T20:56:57+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -394,7 +415,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -456,7 +477,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -472,7 +493,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
@@ -560,16 +581,16 @@
         },
         {
             "name": "ivanlulyf/bunnyphp",
-            "version": "3.0.3",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/IvanLuLyf/BunnyPHP.git",
-                "reference": "8d5c80e033234b5b90032e0ff19aeb342bb0dda3"
+                "reference": "079758fe84c4b4493d57d392b0f85d80dbe6f6c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/IvanLuLyf/BunnyPHP/zipball/8d5c80e033234b5b90032e0ff19aeb342bb0dda3",
-                "reference": "8d5c80e033234b5b90032e0ff19aeb342bb0dda3",
+                "url": "https://api.github.com/repos/IvanLuLyf/BunnyPHP/zipball/079758fe84c4b4493d57d392b0f85d80dbe6f6c0",
+                "reference": "079758fe84c4b4493d57d392b0f85d80dbe6f6c0",
                 "shasum": ""
             },
             "require": {
@@ -606,7 +627,7 @@
                 "issues": "https://github.com/IvanLuLyf/BunnyPHP/issues",
                 "source": "https://github.com/IvanLuLyf/BunnyPHP"
             },
-            "time": "2021-10-05T18:18:22+00:00"
+            "time": "2021-11-04T15:38:02+00:00"
         },
         {
             "name": "psr/http-client",
@@ -770,32 +791,40 @@
         },
         {
             "name": "qcloud/cos-sdk-v5",
-            "version": "v2.3.4",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tencentyun/cos-php-sdk-v5.git",
-                "reference": "3a21def7d1a152c4c1a8fcc85c50a133bd8cc1a2"
+                "reference": "85d5cb660574a3de6f4a83b76e8b0506e03b9e9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tencentyun/cos-php-sdk-v5/zipball/3a21def7d1a152c4c1a8fcc85c50a133bd8cc1a2",
-                "reference": "3a21def7d1a152c4c1a8fcc85c50a133bd8cc1a2",
+                "url": "https://api.github.com/repos/tencentyun/cos-php-sdk-v5/zipball/85d5cb660574a3de6f4a83b76e8b0506e03b9e9a",
+                "reference": "85d5cb660574a3de6f4a83b76e8b0506e03b9e9a",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": ">=6.2.1",
-                "guzzlehttp/guzzle-services": ">=1.1",
-                "guzzlehttp/psr7": "<=2.1",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^6.2.1 || ^7.0",
+                "guzzlehttp/guzzle-services": "^1.1",
+                "guzzlehttp/psr7": "^1.3.1 || ^2.0",
                 "php": ">=5.6"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
             "autoload": {
-                "psr-4": {
-                    "Qcloud\\Cos\\": "src/Qcloud/Cos/"
-                },
                 "files": [
-                    "src/Qcloud/Cos/Common.php"
-                ]
+                    "src/Common.php"
+                ],
+                "psr-4": {
+                    "Qcloud\\Cos\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -823,9 +852,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tencentyun/cos-php-sdk-v5/issues",
-                "source": "https://github.com/tencentyun/cos-php-sdk-v5/tree/v2.3.4"
+                "source": "https://github.com/tencentyun/cos-php-sdk-v5/tree/v2.5.1"
             },
-            "time": "2021-10-08T01:45:04+00:00"
+            "time": "2022-02-16T02:38:37+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -872,17 +901,84 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "symfony/polyfill-php80",
-            "version": "v1.23.1",
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
-                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/6f981ee24cf69ee7ce9736146d1c57c2780598a8",
+                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.5-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-12T14:48:14+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.25.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4407588e0d3f1f52efb65fbe92babe41f37fe50c",
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c",
                 "shasum": ""
             },
             "require": {
@@ -899,12 +995,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -936,7 +1032,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -952,7 +1048,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-28T13:41:28+00:00"
+            "time": "2022-03-04T08:16:47+00:00"
         }
     ],
     "packages-dev": [],
